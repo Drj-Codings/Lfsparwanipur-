@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addmission</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Titillium+Web&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+           <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> 
+ 
+</head>
+<body style="background-color: #ffe6ff;">
+   
+   
+
+         <div class="container">
+        <form id="contact" action="" method="post">
+
+           <br> <h3 align="center">Fill the form below and press the submit button!</h3><br>
+            <div class="row">
+        
+                <div class="column">            
+        <!-- name-->
+                    <fieldset>
+                      Name:   <input type="text" placeholder="Full Name *" name="name" required autofocus>
+                    </fieldset>
+           <!-- father name-->
+                    <fieldset>
+                     Father's name   <input type="text" placeholder="Father name *" name="fname" required autofocus>
+                    </fieldset>
+         <!-- email -->
+                    <fieldset>
+                        Email :<input type="email" placeholder="Your email *" name="email" required autofocus>
+                    </fieldset>
+        <!-- DOB-->
+                    <fieldset>
+                       DOB : <input type="text" placeholder="Date of birth *" name="date" onfocus="(this.type = 'date')" required autofocus>
+                    </fieldset>
+           
+        <!-- country code -->
+                    <fieldset>
+                       Mobile No. :  <input type="number" placeholder="Phone number *" name="phone" id="phone" required autofocus>
+                    </fieldset>
+                </div>
+                <!-- gender-->
+                <div class="column">
+                    <fieldset>
+                        <p>What is your gender?</p>
+                        <div class="radio">
+                            <input type="radio" id="male" name="gender" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="female" name="gender" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </fieldset>
+                <!--upload file-->
+                    <fieldset>
+                        <p>Upload Your photo</p>
+                        <input type="file" id="file" required>
+                    </fieldset>
+                </div>
+            </div>
+            <!-- submit button -->
+            <fieldset align="center">
+                <button type="submit" id="button">Submit Now</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="Js/amd.js"></script>
+</body>
+</html>
